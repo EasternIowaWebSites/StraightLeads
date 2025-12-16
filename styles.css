@@ -1,0 +1,224 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-header {
+  width: 100%;
+  color: white;
+  padding: 12px 16px;
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  min-height: 75px;
+  box-sizing: border-box;
+}
+
+.mobilenav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /* evenly space left/center/right */
+    z-index: 3;
+
+}
+
+.site-header {
+  background: transparent;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;   /* centers logo perfectly */
+
+  }
+
+/* Hamburger menu (mobile only) */
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+/* CTA Button */
+.cta {
+  background: #29ff03;
+  color: black;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  justify-content: flex-end;
+}
+
+.logo-img {
+  height: 100px;
+  width: auto;
+}
+
+.desktoplogo {
+  display: none;
+}
+
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  background: #1e293b;
+}
+
+/* Toggle open class */
+.nav-links.open {
+  display: flex;
+}
+.nav-links {
+  display: none;
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  background: #0f172a;
+  z-index: 1;
+}
+
+
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+
+
+
+}
+
+#title {
+  color: aliceblue;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  text-align: left;
+  z-index: 1;
+  margin: 3vh 4vh;
+
+}
+
+#subtitle {
+  color: #b8cfcb;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  text-align: left;
+  z-index: 1;
+  margin: 3vh 4vh;
+}
+
+.btn-primary {
+  position: relative;
+  font-size: 4vh;
+  z-index: 1;
+  text-align: left;
+  background: #e4d873;
+  margin: 3vh 4vh;
+  color: black;
+  border-radius: 10vh;
+  padding: 1vh 1vh;
+  text-decoration: none;
+
+}
+
+#square1, #square2, #square3 {
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 2vh 2vh;
+  position: relative;
+  margin: 4vh 10vh;
+  border-radius: 3vh;
+  color: #ffffff;
+  z-index: 1;
+}
+
+#square1 {
+  background-color: #e4d873;
+  margin: 10vh 10vh 4vh 10vh;
+}
+
+#square2 {
+  background-color: #b23427
+}
+
+#square3 {
+  background-color: #2da99c;
+}
+
+
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+
+  .mobilenav-container {
+    display: none;
+  }
+/* CTA Button */
+.cta {
+  background: #29ff03;
+  color: black;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+  .cta {
+      display: block;
+      margin-right: auto;
+      text-align: right; 
+  } 
+
+  .desktoplogo {
+    flex: 1;
+    display: flex;
+    justify-content: center;   /* centers logo perfectly */
+
+  }
+}
+/*  end of desktop styling */
+body {
+
+  background: url("background.svg") no-repeat center top;
+  background-size: cover;
+  background-color: black;
+
+}
+
+
+.wrapper-main {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    padding-top: 20px;
+    background: transparent;
+ 
+}
+
+
+
+/* 600, 601, 768, 992, 1200*/
